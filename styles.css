@@ -435,3 +435,40 @@ section {
         padding-top: 100px;
     }
 }
+
+.language-toggle {
+    margin-left: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.lang-link:hover {
+    transform: scale(1.1);
+}
+
+.flag-icon {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 576px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theo Santoro - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Fixed Navigation Header -->
+<nav class="fixed-header">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/theossalmeida" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/theo-santoro-b10764200/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+    </div>
+    <a href="index.html" class="lang-link" title="Português">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" class="flag-icon">
+        <!-- Brazil Flag SVG -->
+        <rect width="16" height="12" fill="#009b3a"/>
+        <path d="M8,1 L14,6 L8,11 L2,6 Z" fill="#ffdf00"/>
+        <circle cx="8" cy="6" r="3" fill="#002776"/>
+        <path d="M5.3,6 A2.7,2.7 0 0 1 8,3.3 A2.7,2.7 0 0 1 10.7,6" fill="#fff" stroke="none"/>
+      </svg>
+    </a>
+  </div>
+</nav>
+<!-- Header Section -->
+<header>
+  <div class="intro">
+    <h1>Hello, I'm Theo</h1>
+    <p>
+      I'm 24 years old, a software engineering student experienced in automation, data analysis, backend, full-stack development, and complete digital solutions.
+      <br>I'm open to collaborations on open-source projects.
+    </p>
+  </div>
+  <div class="profile-image">
+    <img src="./imgs/theo.jpeg" alt="Theo Santoro">
+  </div>
+</header>
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="section-description">A selection of my recent and personal projects.</p>
+
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3 class="project-title">Deuxcerie ERP</h3>
+        <p class="project-description">A management platform for the company Deuxcerie, including features for order, customer, product, and financial flow management, capable of managing the entire business and exporting insights via dashboards.</p>
+        <div class="tech-tags">
+          <span class="tag">React</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+        </div>
+        <a href="https://github.com/theossalmeida/deuxcerie-saas" target="_blank" class="view-link">View code →</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3 class="project-title">Weather App</h3>
+        <p class="project-description">A web app consuming an open API for weather data, displaying dynamic frontend content based on searched city weather. The project is available on Render.</p>
+        <div class="tech-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="#" class="view-link">View code →</a>
+        <a href="https://weather-app-tih6.onrender.com/" target="_blank" class="view-link">View deployment →</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3 class="project-title">Discord Music Bot</h3>
+        <p class="project-description">Discord music bot featuring chat interactions, user requests, YouTube search, and voice channel music playback. Currently not fully functional due to Discord restrictions.</p>
+        <div class="tech-tags">
+          <span class="tag">Python</span>
+        </div>
+        <a href="https://github.com/theossalmeida/Discord-Music-Bot" target="_blank" class="view-link">View code →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="section-description">An overview of my professional journey.</p>
+
+  <div class="experience-item">
+    <h3 class="job-title">Data Intern</h3>
+    <p class="company">Farm Rio</p>
+    <span class="job-period">2024 - Present</span>
+    <p class="job-description">Developing queries for performance teams, consuming and processing third-party APIs, Python scripting for routine automation, dashboard creation, and opportunity analysis.</p>
+    <div class="tech-tags">
+      <span class="tag">Python</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Google Cloud Platform</span>
+      <span class="tag">PowerBI</span>
+      <span class="tag">Data Analysis</span>
+      <span class="tag">Automation</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <h3 class="job-title">Digitalization Intern</h3>
+    <p class="company">Subsea7</p>
+    <span class="job-period">2023 - 2024</span>
+    <p class="job-description">Developed Python scripts for engineering solutions, automation of processes and routines, and low-code digital solutions.</p>
+    <div class="tech-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">OrcaFlex</span>
+      <span class="tag">PowerAutomate</span>
+      <span class="tag">PowerApps</span>
+      <span class="tag">APIs</span>
+      <span class="tag">Unit Testing</span>
+      <span class="tag">Automation</span>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <h2>Education and Certificates</h2>
+  <p class="section-description">My academic background and professional certifications.</p>
+
+  <!-- Education Item -->
+  <div class="experience-item">
+    <h3 class="job-title">Software Engineering</h3>
+    <p class="company">Estácio de Sá University</p>
+    <span class="job-period">2022 - 2026</span>
+    <p class="job-description">Bachelor's degree in Software Engineering focused on application development, information security, and systems engineering.</p>
+  </div>
+
+  <!-- Education Item -->
+  <div class="experience-item">
+    <h3 class="job-title">Production Engineering</h3>
+    <p class="company">CEFET/RJ</p>
+    <span class="job-period">2022 - 2026</span>
+    <p class="job-description">Bachelor's degree in Production Engineering focused on data analysis, statistical methods, and project management.</p>
+  </div>
+
+  <!-- Certificates -->
+  <div class="certificates-container">
+    <h3>Certificates</h3>
+
+    <div class="certificate-item">
+      <div class="certificate-header">
+        <h4>Python Course</h4>
+        <span class="certificate-date">2023</span>
+      </div>
+      <p>Certificate for completion of a 120-hour Python course from UDEMY.</p>
+    </div>
+
+    <div class="certificate-item">
+      <div class="certificate-header">
+        <h4>Java Course</h4>
+        <span class="certificate-date">2025</span>
+      </div>
+      <p>Certificate for completion of a 120-hour Java course from UDEMY (IT University).</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="section-description">My technical and professional skills.</p>
+
+  <div class="skills-container">
+    <!-- Frontend Skills -->
+    <div class="skill-category">
+      <h3>Frontend</h3>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>HTML5/CSS3</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>JavaScript</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>TypeScript</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>React</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <div class="skill-category">
+      <h3>Backend</h3>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Python</span>
+          <span>Advanced</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Java</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>SQL</span>
+          <span>Expert</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>GCP</span>
+          <span>Basic</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 25%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>AWS</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Others -->
+    <div class="skill-category">
+      <h3>Tools & Others</h3>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Git & GitHub</span>
+          <span>Advanced</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Figma</span>
+          <span>Basic</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 25%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Test Driven Development</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Agile Methodologies</span>
+          <span>Advanced</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Microsoft Office (Excel - VBA, PowerBI...)</span>
+          <span>Expert</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 100%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="skill-category">
+      <h3>Languages</h3>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>English</span>
+          <span>Advanced</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>Spanish</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-name">
+          <span>French</span>
+          <span>Basic</span>
+        </div>
+        <div class="skill-level">
+          <div class="skill-percent" style="width: 25%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="job-description">
+    Interested in working together? Get in touch:
+    <br>
+    theoalmeida00@gmail.com | +55 (21) 98512-8331
+  </p>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Theo Santoro. All rights reserved.</p>
+  <p>Frontend Developer & UI/UX Designer</p>
+  <div class="social-links">
+    <a href="https://github.com/theossalmeida" aria-label="GitHub">GitHub</a>
+    <a href="https://www.linkedin.com/in/theo-santoro-b10764200" aria-label="LinkedIn">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
