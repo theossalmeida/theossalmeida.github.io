@@ -1,433 +1,489 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theo Santoro - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Theo Santoro — Desenvolvedor Fullstack & Engenheiro de Software. Portfólio de projetos em Next.js, .NET, Python e mais.">
+  <title>Theo Santoro — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Fixed Navigation Header -->
-    <nav class="fixed-header">
-        <div class="nav-container">
-            <div class="nav-links">
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/theossalmeida" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/theo-santoro-b10764200/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-            </div>
-            <div class="language-toggle">
-                <a href="index_en.html" class="lang-link" title="English">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" class="flag-icon">
-                        <!-- US Flag SVG -->
-                        <rect width="16" height="12" fill="#f0f0f0"/>
-                        <rect y="0" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="1.84" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="3.68" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="5.52" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="7.36" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="9.2" width="16" height="0.92" fill="#d80027"/>
-                        <rect y="11.04" width="16" height="0.92" fill="#d80027"/>
-                        <rect width="7" height="6.4" fill="#2e3393"/>
-                        <circle cx="1.2" cy="1" r="0.3" fill="white"/>
-                        <circle cx="3.2" cy="1" r="0.3" fill="white"/>
-                        <circle cx="5.2" cy="1" r="0.3" fill="white"/>
-                        <circle cx="2.2" cy="1.8" r="0.3" fill="white"/>
-                        <circle cx="4.2" cy="1.8" r="0.3" fill="white"/>
-                        <circle cx="1.2" cy="2.6" r="0.3" fill="white"/>
-                        <circle cx="3.2" cy="2.6" r="0.3" fill="white"/>
-                        <circle cx="5.2" cy="2.6" r="0.3" fill="white"/>
-                        <circle cx="2.2" cy="3.4" r="0.3" fill="white"/>
-                        <circle cx="4.2" cy="3.4" r="0.3" fill="white"/>
-                        <circle cx="1.2" cy="4.2" r="0.3" fill="white"/>
-                        <circle cx="3.2" cy="4.2" r="0.3" fill="white"/>
-                        <circle cx="5.2" cy="4.2" r="0.3" fill="white"/>
-                        <circle cx="2.2" cy="5" r="0.3" fill="white"/>
-                        <circle cx="4.2" cy="5" r="0.3" fill="white"/>
-                    </svg>
-                </a>
-            </div>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">~/theo<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#projects">projetos</a></li>
+      <li><a href="#experience">experiência</a></li>
+      <li><a href="#education">educação</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contato</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://github.com/theossalmeida" target="_blank" class="nav-icon" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/theo-santoro-b10764200/" target="_blank" class="nav-icon" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="index_en.html" class="lang-btn" title="English">
+        <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="16" fill="#f0f0f0"/>
+          <rect y="0"    width="24" height="1.23" fill="#d80027"/>
+          <rect y="2.46" width="24" height="1.23" fill="#d80027"/>
+          <rect y="4.92" width="24" height="1.23" fill="#d80027"/>
+          <rect y="7.38" width="24" height="1.23" fill="#d80027"/>
+          <rect y="9.84" width="24" height="1.23" fill="#d80027"/>
+          <rect y="12.3" width="24" height="1.23" fill="#d80027"/>
+          <rect y="14.77" width="24" height="1.23" fill="#d80027"/>
+          <rect width="10" height="8.6" fill="#2e3393"/>
+          <circle cx="1.5" cy="1.3" r="0.45" fill="white"/>
+          <circle cx="3.2" cy="1.3" r="0.45" fill="white"/>
+          <circle cx="4.9" cy="1.3" r="0.45" fill="white"/>
+          <circle cx="6.6" cy="1.3" r="0.45" fill="white"/>
+          <circle cx="8.3" cy="1.3" r="0.45" fill="white"/>
+          <circle cx="2.35" cy="2.7" r="0.45" fill="white"/>
+          <circle cx="4.05" cy="2.7" r="0.45" fill="white"/>
+          <circle cx="5.75" cy="2.7" r="0.45" fill="white"/>
+          <circle cx="7.45" cy="2.7" r="0.45" fill="white"/>
+          <circle cx="1.5" cy="4.1" r="0.45" fill="white"/>
+          <circle cx="3.2" cy="4.1" r="0.45" fill="white"/>
+          <circle cx="4.9" cy="4.1" r="0.45" fill="white"/>
+          <circle cx="6.6" cy="4.1" r="0.45" fill="white"/>
+          <circle cx="8.3" cy="4.1" r="0.45" fill="white"/>
+          <circle cx="2.35" cy="5.5" r="0.45" fill="white"/>
+          <circle cx="4.05" cy="5.5" r="0.45" fill="white"/>
+          <circle cx="5.75" cy="5.5" r="0.45" fill="white"/>
+          <circle cx="7.45" cy="5.5" r="0.45" fill="white"/>
+          <circle cx="1.5" cy="6.9" r="0.45" fill="white"/>
+          <circle cx="3.2" cy="6.9" r="0.45" fill="white"/>
+          <circle cx="4.9" cy="6.9" r="0.45" fill="white"/>
+          <circle cx="6.6" cy="6.9" r="0.45" fill="white"/>
+          <circle cx="8.3" cy="6.9" r="0.45" fill="white"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="home" class="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-grid"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="terminal-box">
+        <span class="t-user">theo</span><span class="t-at">@</span><span class="t-host">portfolio</span><span class="t-colon">:</span><span class="t-dir">~</span><span class="t-dollar">$</span>
+        <span class="t-cmd" id="typing-text"></span><span class="cursor"></span>
+      </div>
+
+      <h1 class="hero-name">Theo Santoro</h1>
+
+      <p class="hero-role">
+        <span class="c-comment">// </span><span class="c-string">Backend Engineer &amp; Engenheiro de Software</span>
+      </p>
+
+      <p class="hero-desc">
+        <span class="age-display"></span> anos · Backend Engineer · .NET &amp; Python
+        <br >Aberto a colaborações open source.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn-ghost">Contato</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-wrap">
+        <div class="profile-ring"></div>
+        <img src="./imgs/theo.jpeg" alt="Theo Santoro" class="profile-img">
+      </div>
+      <span class="float-badge fb-1">C# / .NET 8 ⚙️</span>
+      <span class="float-badge fb-2">Python 🐍</span>
+      <span class="float-badge fb-3">PostgreSQL 🐘</span>
+      <span class="float-badge fb-4">Clean Arch 🏗️</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-wrap">
+    <span class="section-label">// projetos</span>
+    <h2 class="section-title">O que eu construí</h2>
+    <div class="section-divider"></div>
+
+    <div class="projects-grid">
+
+      <!-- Deuxcerie -->
+      <div class="pcard animate-in">
+        <div class="pcard-bar">
+          <span class="wd wd-r"></span><span class="wd wd-y"></span><span class="wd wd-g"></span>
+          <span class="pcard-file">deuxcerie/page.tsx</span>
         </div>
-    </nav>
-    <!-- Header Section -->
-    <header>
-        <div class="intro">
-            <h1>Olá, Eu sou o Theo</h1>
-            <p>
-                Tenho 24 anos, sou estudante de engenharia de software e tenho experiência em automações, análise de dados, desenvolvimento backend, fullstack e soluções digitais completas.
-                <br>Estou aberto a colaborações em projetos open source.
-            </p>
+        <div class="pcard-body">
+          <div class="pcard-header">
+            <h3 class="pcard-title">Deuxcerie</h3>
+            <span class="status status-live"><span class="status-dot"></span> live</span>
+          </div>
+          <p class="pcard-desc">E-commerce fullstack para confeitaria artesanal. Pagamentos via PIX e cartão, upload de fotos de referência e rastreamento de pedidos em tempo real via webhook.</p>
+          <div class="pcard-tags">
+            <span class="ptag ptag-blue">Next.js</span>
+            <span class="ptag ptag-blue">TypeScript</span>
+            <span class="ptag ptag-green">.NET 10</span>
+            <span class="ptag ptag-green">PostgreSQL</span>
+            <span class="ptag ptag-purple">Fly.io</span>
+            <span class="ptag ptag-orange">PIX / Cartão</span>
+          </div>
+          <div class="pcard-links">
+            <a href="https://github.com/theossalmeida/deuxcerie-saas" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+            <a href="https://pedidos.deuxcerie.com.br" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Demo
+            </a>
+          </div>
         </div>
-        <div class="profile-image">
-            <img src="./imgs/theo.jpeg" alt="Your Name">
+      </div>
+
+      <!-- DeuxOrders -->
+      <div class="pcard animate-in">
+        <div class="pcard-bar">
+          <span class="wd wd-r"></span><span class="wd wd-y"></span><span class="wd wd-g"></span>
+          <span class="pcard-file">DeuxOrders/Program.cs</span>
         </div>
-    </header>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projetos</h2>
-        <p class="section-description">Uma seleção dos meus projetos mais recentes e pessoais.</p>
-        
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Deuxcerie ERP</h3>
-                    <p class="project-description">Uma plataforma gestão para a empresa Deuxcerie, com features de gestão de pedidos, clientes, produtos, fluxo financeiros, com capacidade de gerir todo o negócio e ainda export insights por meio de dashboard.</p>
-                    <div class="tech-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                    </div>
-                    <a href="https://github.com/theossalmeida/deuxcerie-saas" target="_blank" class="view-link">Veja sobre os códigos →</a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Weather App</h3>
-                    <p class="project-description">Aplicativo web que consome uma open api com informações climáticas e expõe no frontend dinâmico que reage de acordo com o clima da cidade pesquisada. O projeto está disponível para acesso via render</p>
-                    <div class="tech-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">Banco de dados relacional</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                    <a href="https://github.com/theossalmeida/Weather-App" class="view-link">Veja sobre os códigos →</a>
-                    <a href="https://weather-app-tih6.onrender.com/" target="_blank" class="view-link">Veja o deploy →</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Discord Music Bot</h3>
-                    <p class="project-description">Bot de música para servidor no discord, o bot tem diversas features como interagir no chat ao ser iniciado, reagir aos pedidos dos usuários, pesquisar músicas no youtube e reproduzir músicas no canal de voz. Atualmente há restrições para esse tipo de bot nas regras do Discord, por isso não está 100% funcional.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Python</span>
-                    </div>
-                    <a href="https://github.com/theossalmeida/Discord-Music-Bot" target="_blank" class="view-link">Veja sobre os códigos →</a>
-                </div>
-            </div>
+        <div class="pcard-body">
+          <div class="pcard-header">
+            <h3 class="pcard-title">DeuxOrders</h3>
+            <span class="status status-live"><span class="status-dot"></span> live</span>
+          </div>
+          <p class="pcard-desc">Sistema de gerenciamento de pedidos para pequenos negócios. Clean Architecture com .NET, autenticação JWT, containerização Docker e CI/CD via GitHub Actions.</p>
+          <div class="pcard-tags">
+            <span class="ptag ptag-green">.NET 10</span>
+            <span class="ptag ptag-green">C#</span>
+            <span class="ptag ptag-green">PostgreSQL</span>
+            <span class="ptag ptag-purple">JWT</span>
+            <span class="ptag ptag-blue">Docker</span>
+            <span class="ptag ptag-orange">Clean Arch</span>
+          </div>
+          <div class="pcard-links">
+            <a href="https://github.com/theossalmeida/DeuxOrders" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experiência</h2>
-        <p class="section-description">Uma visão da minha trajetória profissional e carreira.</p>
-
-        <!-- Experience Item 3 -->
-        <div class="experience-item">
-            <h3 class="job-title">Estagiário de Dados</h3>
-            <p class="company">Farm Rio</p>
-            <span class="job-period">2024 - Presente</span>
-            <p class="job-description">Desenvolvimento de queries para o time de performance, consumo de APIs terceiras e tratamento dos dados, script python para automação de rotinas, desenvolvimento de dashboards e análises de oportunidade.</p>
-            <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">SQL</span>
-                <span class="tag">Google Cloud Platform</span>
-                <span class="tag">PowerBI</span>
-                <span class="tag">Análise de Dados</span>
-                <span class="tag">Automações</span>
-            </div>
+      <!-- Landing Page -->
+      <div class="pcard animate-in">
+        <div class="pcard-bar">
+          <span class="wd wd-r"></span><span class="wd wd-y"></span><span class="wd wd-g"></span>
+          <span class="pcard-file">landing/App.tsx</span>
         </div>
-
-        <!-- Experience Item 2 -->
-        <div class="experience-item">
-            <h3 class="job-title">Estagiário de Digitalização</h3>
-            <p class="company">Subsea7</p>
-            <span class="job-period">2023 - 2024</span>
-            <p class="job-description">Desenvolvi script python para soluções de engenharia, automações para processos e rotinas, soluções digitais low code.</p>
-            <div class="tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">OrcaFlex</span>
-                <span class="tag">PowerAutomate</span>
-                <span class="tag">PowerApps</span>
-                <span class="tag">API's</span>
-                <span class="tag">Testes Unitários</span>
-                <span class="tag">Automações</span>
-            </div>
+        <div class="pcard-body">
+          <div class="pcard-header">
+            <h3 class="pcard-title">Deux Landing Page</h3>
+            <span class="status status-live"><span class="status-dot"></span> live</span>
+          </div>
+          <p class="pcard-desc">Landing page interativa para a marca Deuxcerie. Animações scroll-triggered, design system customizado e integração com Gemini AI para features interativas.</p>
+          <div class="pcard-tags">
+            <span class="ptag ptag-blue">React</span>
+            <span class="ptag ptag-blue">TypeScript</span>
+            <span class="ptag ptag-blue">Vite</span>
+            <span class="ptag ptag-purple">Tailwind CSS</span>
+            <span class="ptag ptag-orange">Gemini AI</span>
+          </div>
+          <div class="pcard-links">
+            <a href="https://github.com/theossalmeida/Deux-LandingPage" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+            <a href="https://www.deuxcerie.com.br" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Demo
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Educação e Certificados</h2>
-        <p class="section-description">Minha formação acadêmica e certificações profissionais.</p>
-
-        <!-- Education Item -->
-        <div class="experience-item">
-            <h3 class="job-title">Engenharia de Software</h3>
-            <p class="company">Estácio de Sá</p>
-            <span class="job-period">2022 - 2026</span>
-            <p class="job-description">Bacharelado em Engenharia de Software com foco em desenvolvimento de aplicações, segurança da informação e engenharia de sistemas.</p>
+      <!-- Discord Bot -->
+      <div class="pcard animate-in">
+        <div class="pcard-bar">
+          <span class="wd wd-r"></span><span class="wd wd-y"></span><span class="wd wd-g"></span>
+          <span class="pcard-file">discord_bot/main.py</span>
         </div>
-
-        <!-- Education Item -->
-        <div class="experience-item">
-            <h3 class="job-title">Engenharia de Produção</h3>
-            <p class="company">CEFET/RJ</p>
-            <span class="job-period">2022 - 2026</span>
-            <p class="job-description">Bacharelado em Engenharia de Produção com foco em análise de dados, métodos estatísticos e gestão de projetos.</p>
+        <div class="pcard-body">
+          <div class="pcard-header">
+            <h3 class="pcard-title">Discord Music Bot</h3>
+            <span class="status status-wip"><span class="status-dot"></span> limitado</span>
+          </div>
+          <p class="pcard-desc">Bot de música para Discord com queue management, busca no YouTube e reprodução em canais de voz. Restrições da plataforma limitam funcionalidade completa.</p>
+          <div class="pcard-tags">
+            <span class="ptag ptag-blue">Python</span>
+            <span class="ptag ptag-green">discord.py</span>
+            <span class="ptag ptag-orange">yt-dlp</span>
+          </div>
+          <div class="pcard-links">
+            <a href="https://github.com/theossalmeida/Discord-Music-Bot" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+          </div>
         </div>
+      </div>
 
-        <!-- Certificates -->
-        <div class="certificates-container">
-            <h3>Certificados</h3>
-
-            <div class="certificate-item">
-                <div class="certificate-header">
-                    <h4>Curso de Python</h4>
-                    <span class="certificate-date">2023</span>
-                </div>
-                <p>Certificação de conclusão de curso de python com duração de 120h na UDEMY.</p>
-            </div>
-
-            <div class="certificate-item">
-                <div class="certificate-header">
-                    <h4>Curso de Java</h4>
-                    <span class="certificate-date">2025</span>
-                </div>
-                <p>Certificação de conclusão de curso de Java com duração de 120h na UDEMY (IT University).</p>
-            </div>
+      <!-- Timesheet Extractor -->
+      <div class="pcard animate-in pcard--wide">
+        <div class="pcard-bar">
+          <span class="wd wd-r"></span><span class="wd wd-y"></span><span class="wd wd-g"></span>
+          <span class="pcard-file">extractor/main.py</span>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <p class="section-description">Minhas habilidades técnicas e profissionais.</p>
-
-        <div class="skills-container">
-            <!-- Frontend Skills -->
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>HTML5/CSS3</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>JavaScript</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>TypeScript</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>React</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Backend Skills -->
-            <div class="skill-category">
-                <h3>Backend</h3>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Python</span>
-                        <span>Avançado</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Java</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>SQL</span>
-                        <span>Expert</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 100%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>GCP</span>
-                        <span>Básico</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 25%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>AWS</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tools & Others -->
-            <div class="skill-category">
-                <h3>Tools & Others</h3>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Git & GitHub</span>
-                        <span>Avançado</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Figma</span>
-                        <span>Básico</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 25%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Test Driven Development</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Metodologias Ágeis</span>
-                        <span>Avançado</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Pacote Office (Excel - VBA, PowerBI...)</span>
-                        <span>Expert</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 100%;"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Languages -->
-            <div class="skill-category">
-                <h3>Idiomas</h3>
-
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Inglês</span>
-                        <span>Avançado</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Espanhol</span>
-                        <span>Intermediário</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 50%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill-bar">
-                    <div class="skill-name">
-                        <span>Francês</span>
-                        <span>Básico</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-percent" style="width: 25%;"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="pcard-body">
+          <div class="pcard-header">
+            <h3 class="pcard-title">Timesheet Extractor</h3>
+            <span class="status status-live"><span class="status-dot"></span> live</span>
+          </div>
+          <p class="pcard-desc">Extração automática de folhas de ponto de PDFs trabalhistas via OCR dual (pdfplumber + Gemini AI). Detecta PDFs nativos, escaneados e híbridos. Gera Excel formatado e CSV PJeCalc com streaming SSE em tempo real.</p>
+          <div class="pcard-tags">
+            <span class="ptag ptag-blue">FastAPI</span>
+            <span class="ptag ptag-blue">Python</span>
+            <span class="ptag ptag-blue">Next.js</span>
+            <span class="ptag ptag-green">pdfplumber</span>
+            <span class="ptag ptag-orange">Gemini AI</span>
+            <span class="ptag ptag-purple">SSE Streaming</span>
+            <span class="ptag ptag-purple">Fly.io</span>
+          </div>
+          <div class="pcard-links">
+            <a href="https://github.com/theossalmeida/timesheet-ocr-extractor" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Código
+            </a>
+            <a href="https://timesheet-extractor.fly.dev" target="_blank" class="pcard-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Demo
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contato</h2>
-        <p class="job-description">
-            Interessado em trabalhar juntos? Entre em contato:
-            <br>
-            theoalmeida00@gmail.com  |  +55 (21) 98512-8331
-        </p>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Theo Santoro</p>
-        <p>Desenvolvedor Fullstack</p>
-        <div class="social-links">
-            <a href="https://github.com/theossalmeida" aria-label="GitHub">GitHub</a>
-            <a href="https://www.linkedin.com/in/theo-santoro-b10764200" aria-label="LinkedIn">LinkedIn</a>
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-wrap">
+    <span class="section-label">// experiência</span>
+    <h2 class="section-title">Trajetória Profissional</h2>
+    <div class="section-divider"></div>
+
+    <div class="exp-timeline">
+
+      <div class="exp-item animate-left">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Engenheiro de Software</div>
+            <div class="exp-co">Deuxcerie</div>
+          </div>
+          <span class="exp-period">Jan 2026 — Presente</span>
         </div>
-    </footer>
+        <p class="exp-desc">Arquitetura e desenvolvimento do sistema de pedidos: APIs .NET 8 com CQRS-lite, EF Core para escrita (ACID) e Dapper para leitura de alta vazão. Segurança via AWS Cognito (OAuth2/JWT) + AWS IAM, background workers para processamento assíncrono e pipeline CI/CD com Docker.</p>
+        <div class="pcard-tags">
+          <span class="ptag ptag-green">.NET 8</span>
+          <span class="ptag ptag-green">C#</span>
+          <span class="ptag ptag-orange">CQRS</span>
+          <span class="ptag ptag-blue">AWS Cognito</span>
+          <span class="ptag ptag-blue">Docker</span>
+          <span class="ptag ptag-purple">Dapper</span>
+          <span class="ptag ptag-purple">EF Core</span>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="exp-item animate-left">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Analista de Dados I</div>
+            <div class="exp-co">Farm Rio</div>
+          </div>
+          <span class="exp-period">Set 2024 — Presente</span>
+        </div>
+        <p class="exp-desc">Otimização de queries PostgreSQL complexas para sistemas internos de alta disponibilidade. Implementação de rotinas de processamento em AWS e GCP com foco em performance e segurança. Colaboração em discussões de arquitetura para evolução do ecossistema de dados.</p>
+        <div class="pcard-tags">
+          <span class="ptag ptag-green">PostgreSQL</span>
+          <span class="ptag ptag-blue">AWS</span>
+          <span class="ptag ptag-orange">GCP</span>
+          <span class="ptag ptag-purple">SQL Avançado</span>
+          <span class="ptag ptag-blue">Análise de Dados</span>
+        </div>
+      </div>
+
+      <div class="exp-item animate-left">
+        <div class="exp-top">
+          <div>
+            <div class="exp-role">Estagiário de Backend (Python Developer)</div>
+            <div class="exp-co">Subsea7</div>
+          </div>
+          <span class="exp-period">Fev 2023 — Set 2024</span>
+        </div>
+        <p class="exp-desc">Desenvolvimento de ferramentas de backend e automações Python para processos críticos de engenharia. Testes automatizados com Pytest, padronização de ambientes com Docker e documentação técnica de APIs e fluxos de dados.</p>
+        <div class="pcard-tags">
+          <span class="ptag ptag-blue">Python</span>
+          <span class="ptag ptag-green">Pytest</span>
+          <span class="ptag ptag-blue">Docker</span>
+          <span class="ptag ptag-orange">Automação</span>
+          <span class="ptag ptag-purple">FastAPI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-wrap">
+    <span class="section-label">// educação</span>
+    <h2 class="section-title">Formação &amp; Certificados</h2>
+    <div class="section-divider"></div>
+
+    <div class="edu-grid">
+      <div class="edu-card animate-in">
+        <span class="edu-badge">Bacharelado</span>
+        <div class="edu-degree">Engenharia de Produção</div>
+        <div class="edu-school">CEFET/RJ</div>
+        <div class="edu-period">2022 — 2026</div>
+        <p class="edu-desc">Análise de dados, métodos estatísticos e gestão de projetos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-wrap">
+    <span class="section-label">// skills</span>
+    <h2 class="section-title">Stack Técnica</h2>
+    <div class="section-divider"></div>
+
+    <div class="skills-grid">
+
+      <div class="skill-block animate-in">
+        <div class="skill-block-head">
+          <span class="skill-dot" style="background:#3fb950;"></span>
+          <span class="skill-block-label">backend.cs</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">C# / .NET 8</span>
+          <span class="chip">ASP.NET Core</span>
+          <span class="chip">Java / Spring Boot</span>
+          <span class="chip">Python / FastAPI</span>
+          <span class="chip">Background Workers</span>
+          <span class="chip">Microservices</span>
+        </div>
+      </div>
+
+      <div class="skill-block animate-in">
+        <div class="skill-block-head">
+          <span class="skill-dot" style="background:#58a6ff;"></span>
+          <span class="skill-block-label">databases.sql</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Redis</span>
+          <span class="chip">Entity Framework Core</span>
+          <span class="chip">Dapper</span>
+          <span class="chip">SQL Avançado</span>
+        </div>
+      </div>
+
+      <div class="skill-block animate-in">
+        <div class="skill-block-head">
+          <span class="skill-dot" style="background:#d29922;"></span>
+          <span class="skill-block-label">cloud.yml</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">AWS (Cognito, EC2, S3)</span>
+          <span class="chip">AWS IAM / RDS</span>
+          <span class="chip">GCP</span>
+          <span class="chip">Docker</span>
+          <span class="chip">CI/CD (GitHub Actions)</span>
+          <span class="chip">Trunk-Based Dev</span>
+          <span class="chip">Fly.io</span>
+        </div>
+      </div>
+
+      <div class="skill-block animate-in">
+        <div class="skill-block-head">
+          <span class="skill-dot" style="background:#bc8cff;"></span>
+          <span class="skill-block-label">arch.test</span>
+        </div>
+        <div class="skill-chips">
+          <span class="chip">Clean Architecture</span>
+          <span class="chip">CQRS</span>
+          <span class="chip">RESTful APIs</span>
+          <span class="chip">OAuth2 / JWT</span>
+          <span class="chip">Pytest / xUnit</span>
+          <span class="chip">TDD</span>
+          <span class="chip">Agile / Scrum</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-wrap">
+    <span class="section-label">// contato</span>
+    <h2 class="section-title">Vamos Conversar</h2>
+    <div class="section-divider"></div>
+
+    <div class="contact-wrap">
+      <div class="contact-box animate-in">
+        <span class="contact-label">● disponível para novas oportunidades</span>
+        <h3 class="contact-title">Entre em Contato</h3>
+        <p class="contact-sub">Interessado em trabalhar juntos ou colaborar em projetos? Me manda uma mensagem!</p>
+        <div class="contact-actions">
+          <a href="mailto:theoalmeida00@gmail.com" class="contact-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            theoalmeida00@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/theo-santoro-b10764200/" target="_blank" class="contact-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/theossalmeida" target="_blank" class="contact-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-text"><span>Theo Santoro</span> · Backend Engineer · 2025</span>
+    <div class="footer-links">
+      <a href="https://github.com/theossalmeida" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/theo-santoro-b10764200/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
