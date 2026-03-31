@@ -321,13 +321,21 @@ nav {
   color: var(--text-muted);
   white-space: nowrap;
   animation: float 3.5s ease-in-out infinite;
+  animation-fill-mode: backwards;
   pointer-events: none;
 }
 
-.fb-1 { top: -2%; left: -38%; animation-delay: 0s; }
-.fb-2 { top: 18%; right: -38%; animation-delay: .6s; }
-.fb-3 { bottom: 18%; left: -34%; animation-delay: 1.2s; }
-.fb-4 { bottom: -2%; right: -34%; animation-delay: 1.8s; }
+.fb-1 { top: -8%;  left: -36%;  animation-delay: 0s;   }
+.fb-2 { top: -8%;  right: -34%; animation-delay: .4s;  }
+.fb-3 { top: 30%;  left: -44%;  animation-delay: .8s;  }
+.fb-4 { top: 30%;  right: -42%; animation-delay: 1.2s; }
+.fb-5 { bottom: 28%; left: -42%;  animation-delay: 1.6s; }
+.fb-6 { bottom: 28%; right: -40%; animation-delay: 2.0s; }
+.fb-7 { bottom: -8%; left: -32%;  animation-delay: 2.4s; }
+.fb-8 { bottom: -8%; right: -30%; animation-delay: 2.8s; }
+.fb-9 { bottom: -12%; left: 50%; animation-name: float-center; animation-delay: 3.2s; }
+
+@keyframes float-center { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
 
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
